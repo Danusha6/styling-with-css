@@ -2,6 +2,8 @@
 <html lang="en">
   <head>
     <title>Styling With CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" context="noindex, nofollow">
     <style>
       html{
         background-color:#ccc;
@@ -11,16 +13,45 @@
         width:90%;
         background-color: #fff;
         font-family: 'Times New Roman', Times, serif;
+        margin:auto;
+        padding:1%;
       }
-      h1{
-        background-color: blueviolet; 
-        text-align: center; 
-        color: white
+      header.page-header{
+        background-color:rgb(199, 88, 125) ;
+      }
+      nav{
+        text-align:center; /* centers the nav */
+      }
+      nav ul {
+        list-style:none; /* removes the bullets */
+      }
+      nav ul li{
+        display:inline-block; /* makes horizontal, but able to declare margins */
+        margin:0 2%; /* margin left-right, gets smaller as necessary */
+      }
+      nav a:hover{
+        text-decoration: none; /* on hover, underline goes away */
+      }
+      footer{
+        text-align:center;
+        clear:both;
       }
     </style>
   </head>
   <body>
-    <h1>Styling With CSS By Danait Gebremedhin</h1>
+    <header class="page-header">
+      <h1>Styling With CSS By Danait Gebremedhin</h1>
+    </header>
+    <nav>
+      <ul>
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+          <li><a href="#">Link 6</a></li>
+      </ul>
+   </nav>   
     <p>Clever content goes here</p>
     <p>Clever content goes here</p>
     <p>Clever content goes here</p>
